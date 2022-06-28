@@ -21,11 +21,10 @@ window.addEventListener('load', () => {
 			createdAt: new Date().getTime()
 		}
 
-        if (!todo) {
+        if (!content) {
             alert ("Please create a task!");
             return;
-
-        }
+         };
 
 		todos.push(todo);
 
