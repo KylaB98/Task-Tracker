@@ -14,6 +14,11 @@ window.addEventListener('load', () => {
 	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
         
+        if (!content) {
+            alert ("Please create a task!");
+            return;
+         };
+
 		const todo = {
 			content: e.target.elements.content.value,
 			category: e.target.elements.category.value,
@@ -21,10 +26,6 @@ window.addEventListener('load', () => {
 			createdAt: new Date().getTime()
 		}
 
-        if (!content) {
-            alert ("Please create a task!");
-            return;
-         };
 
 		todos.push(todo);
 
