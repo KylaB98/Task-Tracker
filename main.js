@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
 	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
         
-        if (!content) {
+        if (content == "") {
             alert ("Please create a task!");
             return;
          };
