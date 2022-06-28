@@ -20,8 +20,8 @@ window.addEventListener('load', () => {
 			done: false,
 			createdAt: new Date().getTime()
 		}
-        const task = input.value;
-        if (!task) {
+
+        if (!todo) {
             alert ("Please create a task!");
             return;
 
