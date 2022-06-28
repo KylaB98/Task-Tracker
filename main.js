@@ -13,18 +13,19 @@ window.addEventListener('load', () => {
 
 	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
-        const task = input.value;
-        if (!task) {
-            alert ("Please create a task!");
-            return;
-
-        }
+        
 		const todo = {
 			content: e.target.elements.content.value,
 			category: e.target.elements.category.value,
 			done: false,
 			createdAt: new Date().getTime()
 		}
+        const task = input.value;
+        if (!task) {
+            alert ("Please create a task!");
+            return;
+
+        }
 
 		todos.push(todo);
 
